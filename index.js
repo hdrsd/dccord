@@ -17,9 +17,6 @@ client.on('message', async msg => {
     if(dcconJson.hasOwnProperty(msg)){
         msg.channel.send({file: dcconJson[msg]});
     }
-    if(msg.content == '커비챤'){
-        msg.channel.send(configJson["kirby"]);
-    }
     else if(msg.content == "!리스트"){
         msg.channel.send(dcconGist);
     }
